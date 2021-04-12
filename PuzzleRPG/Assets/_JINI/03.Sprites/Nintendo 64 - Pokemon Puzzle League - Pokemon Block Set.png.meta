@@ -1,0 +1,578 @@
+fileFormatVersion: 2
+guid: 180cf1d9aeb43774dac96dc886c1b534
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2064382694851363239
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_0
+  - first:
+      213: 6311777826359021185
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_1
+  - first:
+      213: -4272841446134149875
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_2
+  - first:
+      213: -8170794483715636803
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_3
+  - first:
+      213: -7418665987387336440
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_4
+  - first:
+      213: -5384224301182745232
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_5
+  - first:
+      213: -3620480182428081576
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_6
+  - first:
+      213: -2218021194859876545
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_7
+  - first:
+      213: -5554238025854573718
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_8
+  - first:
+      213: 6339163027413807868
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_9
+  - first:
+      213: -7445392974544578091
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_10
+  - first:
+      213: -4181053240032885917
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_11
+  - first:
+      213: -1366992829078101041
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_12
+  - first:
+      213: 7170381418793687554
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_13
+  - first:
+      213: -1273427769978939235
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_14
+  - first:
+      213: 6233282102162310765
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_15
+  - first:
+      213: -8321376558993938312
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_16
+  - first:
+      213: -1196003942308148431
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_17
+  - first:
+      213: 5779029717625628913
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_18
+  - first:
+      213: -6886841528422081468
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_19
+  - first:
+      213: 3635710438086058772
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_20
+  - first:
+      213: -594581867413591137
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_21
+  - first:
+      213: 3282507176342993596
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_22
+  - first:
+      213: 8482861926131420467
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_23
+  - first:
+      213: -3019445389639918379
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_24
+  - first:
+      213: 6302081195306439501
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_25
+  - first:
+      213: -1153424805919936753
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_26
+  - first:
+      213: -9093029369340397235
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_27
+  - first:
+      213: 7526953829452246430
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_28
+  - first:
+      213: -4399562041039554094
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_29
+  - first:
+      213: -8332638533367402651
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_30
+  - first:
+      213: -3934453307366120963
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_31
+  - first:
+      213: 1598940514322715494
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_32
+  - first:
+      213: 2313633167262224071
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_33
+  - first:
+      213: -4518034961755085361
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_34
+  - first:
+      213: 6285600164215306540
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_35
+  - first:
+      213: 8030934567644518474
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_36
+  - first:
+      213: 2852210727886914271
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_37
+  - first:
+      213: -3125358773372653830
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_38
+  - first:
+      213: -6697297679917373486
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_39
+  - first:
+      213: 2474371512926846183
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_40
+  - first:
+      213: -4610599006167913415
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_41
+  - first:
+      213: -5376162815174171832
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_42
+  - first:
+      213: -7757337083567152750
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_43
+  - first:
+      213: 3969213789265762008
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_44
+  - first:
+      213: 19053374840337527
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_45
+  - first:
+      213: 5246633750650444381
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_46
+  - first:
+      213: -7700756065869046777
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_47
+  - first:
+      213: -1206519052653438531
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_48
+  - first:
+      213: 203234115245331115
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_49
+  - first:
+      213: -2465719457998465340
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_50
+  - first:
+      213: 2494486691671636948
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_51
+  - first:
+      213: 6086576711568698592
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_52
+  - first:
+      213: 3042110872507283791
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_53
+  - first:
+      213: 6418161086311545549
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_54
+  - first:
+      213: -7496450983784324981
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_55
+  - first:
+      213: -6446226785392869426
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_56
+  - first:
+      213: -3686363710822562471
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_57
+  - first:
+      213: -6606590719645478120
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_58
+  - first:
+      213: -7831613370287170760
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_59
+  - first:
+      213: 6443215248470107761
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_60
+  - first:
+      213: -2558055171198374557
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_61
+  - first:
+      213: -2454008770884361749
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_62
+  - first:
+      213: -4874430654894351418
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_63
+  - first:
+      213: 1060120108822101729
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_64
+  - first:
+      213: 3409020604340087936
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_65
+  - first:
+      213: -6200370350468154624
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_66
+  - first:
+      213: -8914206702568271974
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_67
+  - first:
+      213: -2693423169635145743
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_68
+  - first:
+      213: -3592745518768061836
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_69
+  - first:
+      213: -8995579056742809716
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_70
+  - first:
+      213: 2860022725744466622
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_71
+  - first:
+      213: -4472608238375807664
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_72
+  - first:
+      213: -295229550823587812
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_73
+  - first:
+      213: -3115929442707872859
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_74
+  - first:
+      213: -2270376631238818802
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_75
+  - first:
+      213: 5302910351838535111
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_76
+  - first:
+      213: 6985259855608632282
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_77
+  - first:
+      213: 4556419602675150058
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_78
+  - first:
+      213: -5739296773280510356
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_79
+  - first:
+      213: 5542644792718922996
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_80
+  - first:
+      213: -6365106508397428243
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_81
+  - first:
+      213: -7096346586305903697
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_82
+  - first:
+      213: -3313850178104855582
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_83
+  - first:
+      213: 4669761657714196231
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_84
+  - first:
+      213: 3561694482534340739
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_85
+  - first:
+      213: -7265307492646640237
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_86
+  - first:
+      213: 7759908597620264551
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_87
+  - first:
+      213: 6673021756691247908
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_88
+  - first:
+      213: -2689582771485871790
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_89
+  - first:
+      213: -7811787850015166348
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_90
+  - first:
+      213: -1043973234911244317
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_91
+  - first:
+      213: -6848250858596787214
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_92
+  - first:
+      213: -8194330066863007570
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_93
+  - first:
+      213: 4272698413946739591
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_94
+  - first:
+      213: -7399075759691476946
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_95
+  - first:
+      213: 1096393178535539568
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_96
+  - first:
+      213: -3442764904232318987
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_97
+  - first:
+      213: -8027001311281999082
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_98
+  - first:
+      213: -6743009688724613679
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_99
+  - first:
+      213: 6436966316065099240
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_100
+  - first:
+      213: 4156771629803339426
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_101
+  - first:
+      213: 3042661548507862721
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_102
+  - first:
+      213: 6581434061964637768
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_103
+  - first:
+      213: -1225535242840401472
+    second: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_104
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 5, y: 226, z: 5, w: 5}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 227
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a144179f1926ac10800000000000000
+      internalID: 2064382694851363239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 227
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e0159ed70f79750800000000000000
+      internalID: 6311777826359021185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 227
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d8b9dd751d3b4c0800000000000000
+      internalID: -4272841446134149875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 227
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1886135b18b9e80800000000000000
+      internalID: -8170794483715636803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 227
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809518a179a9b0990800000000000000
+      internalID: -7418665987387336440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 227
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0750af066846745b0800000000000000
+      internalID: -5384224301182745232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 227
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852680ac47871cdc0800000000000000
+      internalID: -3620480182428081576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
