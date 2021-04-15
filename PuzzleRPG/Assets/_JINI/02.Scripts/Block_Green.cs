@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Block_Green : Block
 {
+
+    private void Awake()
+    {
+        type = Type.GREEN;
+    }
     // Start is called before the first frame update
     void Start()
     {

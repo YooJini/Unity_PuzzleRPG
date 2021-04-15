@@ -560,6 +560,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 141
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fe61099710831e0800000000000000
+      internalID: -2218021194859876545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
