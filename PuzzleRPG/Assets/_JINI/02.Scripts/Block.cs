@@ -7,30 +7,25 @@ using UnityEngine.EventSystems;
     {
    
      public enum STATE { DISABLE, ABLE, SELECT, SEARCH, WAIT, PANG, HINT }
-     public enum Type { RED, GREEN, BLUE, PURPLE }
+     public enum TYPE { RED, GREEN, BLUE, PURPLE }
 
-     STATE state;
+     STATE state = STATE.DISABLE;
+     TYPE type;
      public STATE State { get { return state; } set { state = value; } }
-     protected Type type;
+     public TYPE Type { get { return type; } set { type = value; } }
 
-     // public float X{ get { return transform.position.x; } set {  X= value; } }
-     // public float Y { get { return transform.position.y; } set { Y = value; } }
+      public int Index_X{ get; set; }
+      public int Index_Y { get; set; }
 
      static Board board;
 
-     private void Awake()
-     {
-          State = STATE.DISABLE;
-     }
-     private void Start()
-     {
 
-     }
-     public void Search(int x, int y)
-     { //이동할 수 있는 블록 탐색
-         if (State == STATE.SEARCH) return;
-
-     }
+    private void Start()
+    {
+        board = GameObject.Find("Board").GetComponent<Board>();
+    }
+  
+       
 
      // public void Spawn()
      // {
@@ -43,16 +38,7 @@ using UnityEngine.EventSystems;
      //     X = x;
      //     Y = y;
      // }
-     public void Select(out Block block)
-     {
-         if (State == STATE.SELECT)
-         {
-             block = null;
-             return;
-         }
-         block = this;
-         State = STATE.SELECT;
-     }
+    
      public virtual void Skill()
      {
 
@@ -60,6 +46,25 @@ using UnityEngine.EventSystems;
  
      public void OnPointerEnter(PointerEventData eventData)
      {
-        Debug.Log("a");
+        if (State == STATE.ABLE)
+        {
+            State = STATE.SELECT;
+            //이동할 수 있는 블록 찾기
+            board.Search(Index_X, Index_Y,(int)Type);
+
+            //라인 그리기
+            Camera.main.GetComponent<DrawLine>().DrawLineFunc(transform.position);
+            //라인의 시작점을 현재 블록의 위치로 설정
+            Camera.main.GetComponent<DrawLine>().SetStartPoint(transform.position);
+            
+        }
      }
+    public void Able()
+    {
+        State = STATE.ABLE;
+    }
+    public void Disable()
+    {
+        State = STATE.DISABLE;
+    }
 }

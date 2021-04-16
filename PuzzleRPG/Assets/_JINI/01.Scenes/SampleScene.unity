@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 92228279}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 228420584}
   - component: {fileID: 228420583}
   - component: {fileID: 228420586}
+  - component: {fileID: 228420587}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -265,6 +266,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
+--- !u!114 &228420587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228420582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b60f481e6a38448a0e67ee06be8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &385317318
 GameObject:
   m_ObjectHideFlags: 0

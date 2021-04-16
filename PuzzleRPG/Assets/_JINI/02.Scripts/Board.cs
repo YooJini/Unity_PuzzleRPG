@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-
 public class Board : MonoBehaviour
 {
     public Block[,] blocks;
+    List<Block> ableBlockList;
 
     static public int width = 7;
     static public int height = 9;
@@ -20,10 +20,11 @@ public class Board : MonoBehaviour
     Vector2 mousePos;
 
     Player player;
-
+    bool isAbleBlock = false;
     private void Awake()
     {
         blocks = new Block[width, height];
+        ableBlockList = new List<Block>();
 
         //타입별 블록 프리팹 로드
         for (int i = 0; i < type.Length; i++)
@@ -32,64 +33,56 @@ public class Board : MonoBehaviour
         }
         //플레이어 블록 로드
         playerObj = Resources.Load("Prefabs/Player") as GameObject;
-    }
-   
-    private void Start()
-    {
-        
-    }
 
+    }
+ 
     private void OnEnable()
     {
-        StartCoroutine(SetStage());     
-    }
-    
-    private void OnMouseDrag()
-    {
-        
+        StartCoroutine(SetStage());
+       
     }
     private void Update()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    //
-    //  if (Input.GetMouseButtonDown(0))
-    //  {
-    //      if (player.X + 0.5f > mousePos.x && mousePos.x > player.X - 0.5f && mousePos.y > player.Y - 0.5f && mousePos.y < player.Y + 0.5f)
-    //          print("AA");
-    //  }
-    //  if (Input.GetMouseButton(0))
-    //  {
-    //     Block block =  blocks[(int)mousePos.x + 3, (int)mousePos.y + 4];
-    //     
-    //      
-    //  }
-    //  if (Input.GetMouseButtonUp(0))
-    //  {
-    //
-    //  }
+        if (!isAbleBlock)
+        {
+            AbleAroundPlayer();
+        }
     }
- 
+
+    //스테이지 세팅
+    //1. 플레이어 배치
+    //2. 블록 배치
+    IEnumerator SetStage()
+    {
+
+     SetPlayer();
+     yield return null;
+
+     for (int i = 0; i < width ; i++)
+       {
+           for (int j = 0; j < height; j++)
+           {
+                if (i == 3 && j == 1)
+                {
+                    blocks[i, j] = null;
+                    continue;
+                }
+             int index = Random.Range(0, typeSize);
+             GameObject go= Instantiate(type[index]);
+             go.transform.localPosition = new Vector2(i - 3, j - 4);
+             go.name = index.ToString();
+             Block block = go.GetComponent<Block>();
+             block.Index_X = i;
+             block.Index_Y = j;
+             blocks[i, j] = block;
+             yield return null;
+           }
+           yield return null;
+       }
       
-    
-    
-      IEnumerator SetStage()
-      {
-          for (int i = 0; i < width ; i++)
-          {
-              for (int j = 0; j < height; j++)
-              {
-                int index = Random.Range(0, typeSize);
-                GameObject go= Instantiate(type[index]);
-                go.transform.localPosition = new Vector2(i - 3, j - 4);
-                go.name = index.ToString();
-                Block block = go.GetComponent<Block>();
-                blocks[i, j] = block;
-                yield return null;
-              }
-              yield return null;
-          }
-        SetPlayer();
-      }
+    }
+   
+    //플레이어 배치
     public void SetPlayer()
     {
         GameObject go_p = Instantiate(playerObj);
@@ -98,8 +91,66 @@ public class Board : MonoBehaviour
         player = go_p.GetComponent<Player>();
         player.X = 0;
         player.Y = -3;
-        blocks[3, 1].gameObject.SetActive(false);
-        blocks[3, 1] = null;
+        player.Index_X = 3;
+        player.Index_Y = 1;
     }
+
+    //플레이어 주변에 있는 모든 블록 활성화
+    public void AbleAroundPlayer()
+    {
+        if (player.State == Player.STATE.SELECT)
+        {
+            int x = player.Index_X;
+            int y = player.Index_Y;
+            isAbleBlock = true;
+
+           for (int i = x-1; i < x+2; i++)
+           {
+               for (int j = y-1; j < y+2; j++)
+               {
+                   if (i == x && j == y) continue;
+
+                    ableBlockList.Add(blocks[i, j]);
+                    blocks[i, j].Able();
+               }
+           }
+        }
+    }
+
+    public void Search(int index_x, int index_y,int type)
+    {
+        for (int i = 0; i < ableBlockList.Count; i++)
+        {
+            ableBlockList[i].Disable();
+        }
+        ableBlockList.Clear();
+        int x = index_x;
+        int y = index_y;
+
+        //리스트
+        //리스트는 원소를 삭제하면 뒤에 있는 원소가 앞으로 당겨져 동적이다.
+
+        //인접, 같은 타입
+        for (int i = x - 1; i < x + 2; i++)
+        {
+            for (int j = y - 1; j < y + 2; j++)
+            {
+                if (i == x && j == y || !blocks[i,j]) continue;
+                if((int)(blocks[i,j].Type)==type)
+                ableBlockList.Add(blocks[i, j]);
+            }
+        }
+    
+       
+       for (int i = 0; i < ableBlockList.Count; i++)
+       {
+            Debug.Log(ableBlockList.Count);
+            //Debug.Log(i);
+           ableBlockList[i].Able();
+
+       }
+    }
+ 
+   
 }//
  //

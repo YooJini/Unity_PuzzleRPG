@@ -6,7 +6,7 @@ public class Block_Purple : Block
 {
     private void Awake()
     {
-        type = Type.PURPLE;
+        Type = TYPE.PURPLE;
     }
     // Start is called before the first frame update
     void Start()
