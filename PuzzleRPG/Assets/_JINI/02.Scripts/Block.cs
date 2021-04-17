@@ -46,25 +46,41 @@ using UnityEngine.EventSystems;
  
      public void OnPointerEnter(PointerEventData eventData)
      {
+        Debug.Log(State);
         if (State == STATE.ABLE)
         {
             State = STATE.SELECT;
+            board.AddSelectedBlock(this);
             //이동할 수 있는 블록 찾기
             board.Search(Index_X, Index_Y,(int)Type);
 
             //라인 그리기
             Camera.main.GetComponent<DrawLine>().DrawLineFunc(transform.position);
             //라인의 시작점을 현재 블록의 위치로 설정
+            Camera.main.GetComponent<DrawLine>().SetStartPoint(transform.position);           
+        }
+        else if(State==STATE.SELECT)
+        {
+            //라인 지우기
+            Debug.Log("SSS");
+            Camera.main.GetComponent<DrawLine>().RemoveLine();
             Camera.main.GetComponent<DrawLine>().SetStartPoint(transform.position);
-            
+            board.ReleaseSelect();
+            board.Search(Index_X, Index_Y, (int)Type);
         }
      }
     public void Able()
     {
+        if(State==STATE.DISABLE)
         State = STATE.ABLE;
     }
     public void Disable()
     {
-        State = STATE.DISABLE;
+        if(State==STATE.ABLE)
+       State = STATE.DISABLE;
+    }
+    public void SelectToAble()
+    {
+        State = STATE.ABLE;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-    public class Player : MonoBehaviour,IPointerDownHandler
+    public class Player : MonoBehaviour,IPointerDownHandler,IPointerEnterHandler
     {
         public enum STATE { IDLE, SELECT, MOVE }
         STATE state = STATE.IDLE;
@@ -22,6 +22,11 @@ using UnityEngine.EventSystems;
         // Update is called once per frame
     void Update()
     {
+
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+       
 
     }
     public void OnPointerDown(PointerEventData eventData)

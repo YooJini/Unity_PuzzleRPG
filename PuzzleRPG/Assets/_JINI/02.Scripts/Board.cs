@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System.Linq;
 
 public class Board : MonoBehaviour
 {
     public Block[,] blocks;
     List<Block> ableBlockList;
+    List<Block> selectedBlockList;
 
     static public int width = 7;
     static public int height = 9;
@@ -25,6 +27,7 @@ public class Board : MonoBehaviour
     {
         blocks = new Block[width, height];
         ableBlockList = new List<Block>();
+        selectedBlockList = new List<Block>();
 
         //타입별 블록 프리팹 로드
         for (int i = 0; i < type.Length; i++)
@@ -144,13 +147,20 @@ public class Board : MonoBehaviour
        
        for (int i = 0; i < ableBlockList.Count; i++)
        {
-            Debug.Log(ableBlockList.Count);
             //Debug.Log(i);
            ableBlockList[i].Able();
 
        }
     }
- 
-   
+    public void ReleaseSelect()
+    {
+        selectedBlockList.Last().SelectToAble();
+        selectedBlockList.Remove(selectedBlockList.Last());
+    }
+    public void AddSelectedBlock(Block block)
+    {
+        selectedBlockList.Add(block);
+    }
+
 }//
  //
