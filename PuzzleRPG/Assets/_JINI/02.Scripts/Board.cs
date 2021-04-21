@@ -6,14 +6,18 @@ using System.Linq;
 
 public class Board : MonoBehaviour
 {
+    //블록 이차원 배열
     public Block[,] blocks;
+    //플레이어를 둘러싼 블록 리스트
     List<Block> ableBlockList;
+    //선택된 블록 리스트
     List<Block> selectedBlockList;
 
     static public int width = 7;
     static public int height = 9;
     static public int typeSize = 4;
 
+    //블록을 타입별로 나누어 랜덤으로 할당하기 위한 배열
     GameObject[] type = new GameObject[typeSize];
     GameObject playerObj;
 
@@ -21,8 +25,11 @@ public class Board : MonoBehaviour
 
     Vector2 mousePos;
 
-    Player player;
+    static Player player;
+    static DrawLine drawLine;
+
     bool isAbleBlock = false;
+
     private void Awake()
     {
         blocks = new Block[width, height];
@@ -36,6 +43,8 @@ public class Board : MonoBehaviour
         }
         //플레이어 블록 로드
         playerObj = Resources.Load("Prefabs/Player") as GameObject;
+
+        drawLine = Camera.main.GetComponent<DrawLine>();
 
     }
  
@@ -161,6 +170,29 @@ public class Board : MonoBehaviour
     {
         selectedBlockList.Add(block);
     }
-
+    public void Pang()
+    {
+        //선택된 블록따라 플레이어 이동, 선택된 블록 비활성화
+         StartCoroutine(Move());
+        //라인 지우기
+        drawLine.RemoveAll();
+    
+      
+    }
+    IEnumerator Move()
+    {
+        while (selectedBlockList.Count > 0)
+        {
+            //플레이어 이동
+            player.transform.DOMove(selectedBlockList.First().transform.position, 0.5f);
+            yield return new WaitForSeconds(0.5f);
+            //블록 비활성화
+            selectedBlockList.First().gameObject.SetActive(false);
+            //선택된 블록 리스트에서 삭제
+            selectedBlockList.Remove(selectedBlockList.First());
+            
+        }
+       
+    }
 }//
  //

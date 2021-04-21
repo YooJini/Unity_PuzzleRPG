@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-    public class Player : MonoBehaviour,IPointerDownHandler,IPointerEnterHandler
+    public class Player : MonoBehaviour,IPointerDownHandler,IPointerEnterHandler,IPointerUpHandler
     {
         public enum STATE { IDLE, SELECT, MOVE }
         STATE state = STATE.IDLE;
@@ -13,11 +13,12 @@ using UnityEngine.EventSystems;
         public int Index_X { get; set; }
         public int Index_Y { get; set; }
 
+    static Board board;
    
     // Start is called before the first frame update
     void Start()
     {
-       
+        board = GameObject.Find("Board").GetComponent<Board>();
     }
         // Update is called once per frame
     void Update()
@@ -38,4 +39,10 @@ using UnityEngine.EventSystems;
         //플레이어와 인접한 블록만 활성화
        // Debug.Log("PP");
     }
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Debug.Log("UP");
+        board.Pang();
+    }
+  
 }

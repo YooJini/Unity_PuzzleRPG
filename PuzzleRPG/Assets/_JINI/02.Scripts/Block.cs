@@ -14,15 +14,17 @@ using UnityEngine.EventSystems;
      public STATE State { get { return state; } set { state = value; } }
      public TYPE Type { get { return type; } set { type = value; } }
 
-      public int Index_X{ get; set; }
-      public int Index_Y { get; set; }
+     public int Index_X{ get; set; }
+     public int Index_Y { get; set; }
 
      static Board board;
+     static DrawLine drawLine;
 
 
     private void Start()
     {
         board = GameObject.Find("Board").GetComponent<Board>();
+        drawLine = Camera.main.GetComponent<DrawLine>();
     }
   
        
@@ -44,9 +46,9 @@ using UnityEngine.EventSystems;
 
      }
  
+    //포인터가 해당블록을 가리키고 있을 때
      public void OnPointerEnter(PointerEventData eventData)
      {
-        Debug.Log(State);
         if (State == STATE.ABLE)
         {
             State = STATE.SELECT;
@@ -55,20 +57,25 @@ using UnityEngine.EventSystems;
             board.Search(Index_X, Index_Y,(int)Type);
 
             //라인 그리기
-            Camera.main.GetComponent<DrawLine>().DrawLineFunc(transform.position);
+            drawLine.DrawLineFunc(transform.position);
             //라인의 시작점을 현재 블록의 위치로 설정
-            Camera.main.GetComponent<DrawLine>().SetStartPoint(transform.position);           
+            drawLine.SetStartPoint(transform.position);           
         }
         else if(State==STATE.SELECT)
         {
             //라인 지우기
-            Debug.Log("SSS");
-            Camera.main.GetComponent<DrawLine>().RemoveLine();
-            Camera.main.GetComponent<DrawLine>().SetStartPoint(transform.position);
+            drawLine.RemoveLine();
+            drawLine.SetStartPoint(transform.position);
             board.ReleaseSelect();
             board.Search(Index_X, Index_Y, (int)Type);
         }
      }
+    //포인터를 해당블록 위에서 뗐을 때
+    public void OnDrop(PointerEventData eventData)
+    {
+        board.Pang();
+    }
+
     public void Able()
     {
         if(State==STATE.DISABLE)

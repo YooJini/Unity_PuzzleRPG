@@ -8,6 +8,7 @@ public class DrawLine : MonoBehaviour
     LineRenderer lr;
 
     Vector2 _startPoint;
+    //라인 오브젝트풀링
     Queue<GameObject> unusingLine;
     Stack<GameObject> usingLine;
 
@@ -52,12 +53,21 @@ public class DrawLine : MonoBehaviour
     {
         if (usingLine.Count > 0)
         {
-            Debug.Log("Remove");
             GameObject go = usingLine.Pop();
             go.SetActive(false);
             unusingLine.Enqueue(go);
             
         }
         
+    }
+    public void RemoveAll()
+    {
+        //리스트를 앞에서부터 순차적으로 삭제하면
+        //앞으로 당겨지면서 인덱스가 동적으로 변하기 때문에
+        //뒤에서부터 순차적으로 삭제한다.
+        for (int i = usingLine.Count; i > 0; i--)
+        {
+            RemoveLine();
+        }
     }
 }
