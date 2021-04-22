@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
     public class Block : MonoBehaviour, IPointerEnterHandler
     {
@@ -51,10 +52,12 @@ using UnityEngine.EventSystems;
      {
         if (State == STATE.ABLE)
         {
+            //select상태로 변경
             State = STATE.SELECT;
+            //선택블록 리스트에 추가
             board.AddSelectedBlock(this);
             //이동할 수 있는 블록 찾기
-            board.Search(Index_X, Index_Y,(int)Type);
+            board.Search(Index_X, Index_Y,(int)Type,this);
 
             //라인 그리기
             drawLine.DrawLineFunc(transform.position);
@@ -67,14 +70,10 @@ using UnityEngine.EventSystems;
             drawLine.RemoveLine();
             drawLine.SetStartPoint(transform.position);
             board.ReleaseSelect();
-            board.Search(Index_X, Index_Y, (int)Type);
+            board.Search(Index_X, Index_Y, (int)Type,this);
         }
      }
-    //포인터를 해당블록 위에서 뗐을 때
-    public void OnDrop(PointerEventData eventData)
-    {
-        board.Pang();
-    }
+
 
     public void Able()
     {
@@ -89,5 +88,16 @@ using UnityEngine.EventSystems;
     public void SelectToAble()
     {
         State = STATE.ABLE;
+    }
+    //Pang!! -> 비활성화 되었던 블록이 
+    //빈자리에 채워지도록 함 (재사용)
+    public void Reuse()
+    {
+        
+    }
+    public void Down(float count)
+    {
+        Vector2 destination = new Vector2(transform.position.x, transform.position.y - count);
+        transform.DOMove(destination, 0.5f);
     }
 }
