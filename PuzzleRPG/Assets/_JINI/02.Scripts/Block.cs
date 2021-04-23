@@ -15,17 +15,22 @@ using DG.Tweening;
      public STATE State { get { return state; } set { state = value; } }
      public TYPE Type { get { return type; } set { type = value; } }
 
+     public float X { get { return transform.position.x; } }
+     public float Y { get { return transform.position.y; } }
+
      public int Index_X{ get; set; }
      public int Index_Y { get; set; }
 
      static Board board;
      static DrawLine drawLine;
 
+    SpriteRenderer sr;
 
     private void Start()
     {
         board = GameObject.Find("Board").GetComponent<Board>();
         drawLine = Camera.main.GetComponent<DrawLine>();
+        sr = gameObject.GetComponent<SpriteRenderer>();
     }
   
        
@@ -95,9 +100,24 @@ using DG.Tweening;
     {
         
     }
-    public void Down(float count)
+   // public void Down()
+   // {
+   //     
+   //     Debug.Log(Index_Y);
+   // }
+    public void SetIndex()
     {
-        Vector2 destination = new Vector2(transform.position.x, transform.position.y - count);
-        transform.DOMove(destination, 0.5f);
+        Index_X =(int) X + 3;
+        Index_Y =(int) Y + 4;
     }
+    public IEnumerator Down()
+    {
+        transform.DOMoveY(transform.position.y - 1, 0.5f);
+        yield return new WaitForSeconds(1f);
+        SetIndex();
+    }
+  //  public void Blind()
+  //  {
+  //      sr.enabled = false;
+  //  }
 }

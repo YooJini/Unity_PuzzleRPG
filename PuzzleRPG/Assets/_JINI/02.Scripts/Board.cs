@@ -27,7 +27,6 @@ public class Board : MonoBehaviour
     static Player player;
     static DrawLine drawLine;
 
-
     private void Awake()
     {
         blocks = new Block[width, height];
@@ -75,8 +74,7 @@ public class Board : MonoBehaviour
              go.transform.localPosition = new Vector2(i - 3, j - 4);
              go.name = index.ToString();
              Block block = go.GetComponent<Block>();
-             block.Index_X = i;
-             block.Index_Y = j;
+             block.SetIndex();
              blocks[i, j] = block;
              yield return null;
            }
@@ -89,11 +87,12 @@ public class Board : MonoBehaviour
     public void SetPlayer()
     {
         GameObject go_p = Instantiate(playerObj);
+        //플레이어 오브젝트 좌표 설정
         go_p.transform.localPosition = new Vector2(0, -3);
         go_p.name = "player";
         player = go_p.GetComponent<Player>();
-        player.X = 0;
-        player.Y = -3;
+        player.X = 0f;
+        player.Y = -3f;
         player.Index_X = 3;
         player.Index_Y = 1;
     }
@@ -183,49 +182,57 @@ public class Board : MonoBehaviour
     }
     public void Pang()
     {
-        //선택된 블록중 마지막 원소의 인덱스값을 넘겨준다.
-        //해당 인덱스값이 플레이어의 인덱스값이 된다.
         if (selectedBlockList.Count > 0)
-        { 
-            player.InitPlayer(selectedBlockList.Last().Index_X, selectedBlockList.Last().Index_Y); 
-        }
-        
-        //선택블록 리스트에 있는 블록들의 인덱스를 이용하여
-        //전체 블록 배열의 해당 인덱스 블록 값을 null로 바꿔줌
-        for (int i = 0; i < selectedBlockList.Count; i++)
         {
-            blocks[selectedBlockList[i].Index_X, selectedBlockList[i].Index_Y] = null;
-        }
-        //플레이어 Move함수 호출
-        player.Move(selectedBlockList, 0.5f);
-        //라인 지우기
-        drawLine.RemoveAll();
-            
-    }
-   //IEnumerator Move()
-   //{
-   //    WaitForSeconds ws = new WaitForSeconds(0.5f);
-   //
-   //    while (selectedBlockList.Count > 0)
-   //    {
-   //        //플레이어 이동
-   //        player.Move(selectedBlockList.First().transform.position, 0.5f);
-   //        yield return ws;
-   //        //블록 비활성화
-   //        //selectedBlockList.First().gameObject.SetActive(false);
-   //        //선택된 블록 리스트에서 삭제
-   //        selectedBlockList.First().State = Block.STATE.PANG;
-   //        selectedBlockList.Remove(selectedBlockList.First());
-   //        
-   //    }
-   //   
-   //}
-   //Pang!! 이후
-   //빈 공간만큼 블록이 아래로 내려오고
-   //아래로 내려온 만큼 생긴 빈공간을 비활성화 시켰던 블록으로 채운다.
-   public void AfterPang()
-    {
+            //선택된 블록 리스트의 마지막 블록 저장
+            Block lastBlock = selectedBlockList.Last();
 
+
+            //플레이어 이동
+            //이동이 끝나고 나면 해당 함수 내에서 빈 자리를 계산하는 함수를 호출한다.
+            player.Move(selectedBlockList, 0.5f);
+
+            //선택블록 리스트에 있는 블록들의 인덱스를 이용하여
+            //전체 블록 배열의 해당 인덱스 블록 값을 null로 바꿔줌
+
+
+            //플레이어 상태를 초기화 시켜줌
+            //선택된 블록중 마지막 원소의 인덱스값을 넘겨준다.
+            //해당 인덱스값이 플레이어의 인덱스값이 된다.
+            if (selectedBlockList.Count > 0)
+            {
+                player.InitPlayer(lastBlock.Index_X, lastBlock.Index_Y);
+            }
+
+            
+
+            //인덱스를 인수로 넘겨주어 빈 공간을 계산하게 함
+            //단, 마지막 블록은 제외함
+            
+             
+
+            //라인 지우기
+            drawLine.RemoveAll();
+        }
     }
+
+    //블록이 터지고 난 뒤에 벌어질 일들..
+    //터진 팡들의 인덱스 정보를 이용하여 빈 공간을 채운다.
+    //마지막 팡은 제외
+    //그자리에 플레이어가 들어가 있으므로 빈 공간이 생기지 않기 때문임
+
+    public void  AfterPang(int x, int y)
+    {
+        for (int i = y+1; i < height; i++)
+        {
+            StartCoroutine(blocks[x, i].Down());
+            blocks[x, i - 1] = blocks[x, i];
+        }
+
+        StartCoroutine(blocks[player.Index_X, player.Index_Y].Down());
+    }
+
+ 
+   
 }//
  //
