@@ -11,6 +11,8 @@ public class Board : MonoBehaviour
     List<Block> ableBlockList;
     //선택된 블록 리스트
     List<Block> selectedBlockList;
+    //터져서 사라진 블록 리스트
+    List<Block> pangBlockList;
 
     static public int width = 7;
     static public int height = 9;
@@ -26,6 +28,10 @@ public class Board : MonoBehaviour
 
     static Player player;
     static DrawLine drawLine;
+    static Enemy enemy;
+
+    GameObject enemyObj;
+
 
     private void Awake()
     {
@@ -40,6 +46,8 @@ public class Board : MonoBehaviour
         }
         //플레이어 블록 로드
         playerObj = Resources.Load("Prefabs/Player") as GameObject;
+        //에너미 프리팹 로드
+        enemyObj = Resources.Load("Prefabs/Enemy1") as GameObject;
 
         drawLine = Camera.main.GetComponent<DrawLine>();
 
@@ -58,6 +66,7 @@ public class Board : MonoBehaviour
     {
 
      SetPlayer();
+     SetEnemy();
      yield return null;
 
      for (int i = 0; i < width ; i++)
@@ -88,7 +97,7 @@ public class Board : MonoBehaviour
     {
         GameObject go_p = Instantiate(playerObj);
         //플레이어 오브젝트 좌표 설정
-        go_p.transform.localPosition = new Vector2(0, -3);
+        go_p.transform.localPosition = new Vector2(0, -3f);
         go_p.name = "player";
         player = go_p.GetComponent<Player>();
         player.X = 0f;
@@ -123,6 +132,14 @@ public class Board : MonoBehaviour
         
     }
 
+    //에너미 배치
+    public void SetEnemy()
+    {
+        GameObject go_e = Instantiate(enemyObj);
+        enemy = go_e.GetComponent<Enemy>();
+        enemy.Init(3, 0.5f);
+        
+    }
     public void Search(int index_x, int index_y,int type,Block block)
     {
         //선택가능한 블록 리스트에 있는 것들을 모두 disable 시키고
@@ -231,7 +248,12 @@ public class Board : MonoBehaviour
 
         StartCoroutine(blocks[player.Index_X, player.Index_Y].Down());
     }
-
+    //pang 블록을 pang리스트에 추가하는 함수
+    //재사용될 블록들임
+    public void AddPangList(Block block)
+    {
+        pangBlockList.Add(block);
+    }
  
    
 }//

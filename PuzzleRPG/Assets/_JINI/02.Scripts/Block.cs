@@ -121,3 +121,5 @@ using DG.Tweening;
   //      sr.enabled = false;
   //  }
 }
+//인덱스가 겹치면 플레이어 인덱스는 그대로 두고
+//블록의 인덱스를 변경시킨다.

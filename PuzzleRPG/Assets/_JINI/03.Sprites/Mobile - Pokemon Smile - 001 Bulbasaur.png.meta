@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: 6beaf46d621f47c4c8244fdca1a95dd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8042153448499598402
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_0
+  - first:
+      213: -4379969120111327223
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_1
+  - first:
+      213: 851751352000215219
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_2
+  - first:
+      213: -2369187523241589742
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_3
+  - first:
+      213: -48389526549322733
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_4
+  - first:
+      213: 2197845313040213829
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_5
+  - first:
+      213: 1573733077635001303
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_6
+  - first:
+      213: 4239076027658701923
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_7
+  - first:
+      213: 5763621322815589378
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_8
+  - first:
+      213: -3522024972490934184
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_9
+  - first:
+      213: 5723968747794660322
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_10
+  - first:
+      213: -5626592059741134661
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_11
+  - first:
+      213: -4134907952855535276
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_12
+  - first:
+      213: -1503213640938258773
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_13
+  - first:
+      213: -2648828885931678709
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_14
+  - first:
+      213: 2412010907384781909
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_15
+  - first:
+      213: -5029901491944393719
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_16
+  - first:
+      213: 553776438644313306
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_17
+  - first:
+      213: -8896975119923642334
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_18
+  - first:
+      213: 1144551377764702791
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_19
+  - first:
+      213: 585164694420313513
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_20
+  - first:
+      213: 4560647858986629646
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_21
+  - first:
+      213: -5078230020063415380
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_22
+  - first:
+      213: 5308137941483850526
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_23
+  - first:
+      213: 2075271308081320597
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_24
+  - first:
+      213: 8946545825014319788
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_25
+  - first:
+      213: -559700843276700934
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_26
+  - first:
+      213: -3267752062524786581
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_27
+  - first:
+      213: 2885317229991297267
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_28
+  - first:
+      213: 7292121235777268178
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_29
+  - first:
+      213: 3810199521519960396
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_30
+  - first:
+      213: 6050907543254351745
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_31
+  - first:
+      213: 2962232572329402017
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_32
+  - first:
+      213: 2969379294894276634
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_33
+  - first:
+      213: 830464706430340140
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_34
+  - first:
+      213: -4572396760513944491
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_35
+  - first:
+      213: 8526172083993911626
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_36
+  - first:
+      213: -6702087673242427265
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_37
+  - first:
+      213: 5992826550922563743
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_38
+  - first:
+      213: -3696683052935767848
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_39
+  - first:
+      213: 7994051413582417120
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_40
+  - first:
+      213: 7191243031554206613
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_41
+  - first:
+      213: 2743943774554301269
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_42
+  - first:
+      213: -5362465760714650930
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_43
+  - first:
+      213: -3265478424894308774
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_44
+  - first:
+      213: 5123574170542305227
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_45
+  - first:
+      213: -8609330034213531390
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_46
+  - first:
+      213: 7959325621070092988
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_47
+  - first:
+      213: 7665705669952702107
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_48
+  - first:
+      213: 5932952220962142005
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_49
+  - first:
+      213: -6813227761309632124
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_50
+  - first:
+      213: -7851533957907731468
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_51
+  - first:
+      213: 9054497466324703239
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_52
+  - first:
+      213: 6371204804695455720
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_53
+  - first:
+      213: 1127140653467947343
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_54
+  - first:
+      213: -7569438854067468951
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_55
+  - first:
+      213: 3594679547215535441
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_56
+  - first:
+      213: 2483432122617496697
+    second: Mobile - Pokemon Smile - 001 Bulbasaur_57
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Pokemon Smile - 001 Bulbasaur_0
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1034
+        width: 330
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbaff83c08846090800000000000000
+      internalID: -8042153448499598402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
