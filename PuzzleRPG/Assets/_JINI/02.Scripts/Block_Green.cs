@@ -9,15 +9,17 @@ public class Block_Green : Block
     {
         Type = TYPE.GREEN;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (State == STATE.PANG && !pang)
+            Skill();
+    }
+    public override void Skill()
+    {
+        base.Skill();
+        skillMgr.leaf.fillAmount += gauge_unit;
+        pang = true;
+        if (skillMgr.leaf.fillAmount >= 1f) skillMgr.leafBtn.interactable = true;
     }
 }

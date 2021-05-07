@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-   
     private void Awake()
     {
         //해상도를 비율에 맞춰 화면에 딱맞게 보이도록 함

@@ -21,15 +21,19 @@ using DG.Tweening;
      public int Index_X{ get; set; }
      public int Index_Y { get; set; }
 
-     static Board board;
-     static DrawLine drawLine;
+    static Board board;
+    static DrawLine drawLine;
+    protected static SkillManager skillMgr;
 
+    protected float gauge_unit = 0.1f;
+    protected bool pang = false;
     SpriteRenderer sr;
 
     private void Start()
     {
         board = GameObject.Find("Board").GetComponent<Board>();
         drawLine = Camera.main.GetComponent<DrawLine>();
+        skillMgr = GameObject.Find("GameObject").GetComponent<SkillManager>();
         sr = gameObject.GetComponent<SpriteRenderer>();
     }
   
@@ -53,7 +57,7 @@ using DG.Tweening;
      }
  
     //포인터가 해당블록을 가리키고 있을 때
-     public void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
      {
         if (State == STATE.ABLE)
         {

@@ -9,14 +9,16 @@ public class Block_Blue : Block
         Type = TYPE.BLUE;
     }
     // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
+        if (State == STATE.PANG && !pang)
+            Skill();
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void Skill()
     {
-        
+        base.Skill();
+        skillMgr.water.fillAmount += gauge_unit;
+        pang = true;
+        if (skillMgr.water.fillAmount >= 1f) skillMgr.waterBtn.interactable = true;
     }
 }

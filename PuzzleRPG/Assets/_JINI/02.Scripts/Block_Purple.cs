@@ -9,15 +9,17 @@ public class Block_Purple : Block
         Type = TYPE.PURPLE;
     }
     // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
+        if (State == STATE.PANG && !pang)
+            Skill();
+    }
+    public override void Skill()
+    {
+        base.Skill();
+        skillMgr.heart.fillAmount += gauge_unit;
+        pang = true;
+        if (skillMgr.heart.fillAmount >= 1f) skillMgr.heartBtn.interactable = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
 }
