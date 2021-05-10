@@ -98,9 +98,13 @@ public class Player : MonoBehaviour,IPointerDownHandler,IPointerEnterHandler,IPo
 
         //플레이어의 이동이 끝난 뒤에 벌어질 일..
 
+        //플레이어의 원래위치를 기준으로하여
+        //그 위에 있는 블록들을 이동시킨다.
         board.AfterPang(index_x, index_y);
 
      
+        //마지막 블록은 제외한다.
+        //플레이어가 위치해있을 곳이기 때문이다.
         for (int i = 0; i < tmpList.Count-1; i++)
         {
             int x = tmpList[i].Index_X;

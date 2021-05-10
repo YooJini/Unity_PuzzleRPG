@@ -29,6 +29,7 @@ using DG.Tweening;
     protected bool pang = false;
     SpriteRenderer sr;
 
+
     private void Start()
     {
         board = GameObject.Find("Board").GetComponent<Board>();
@@ -61,6 +62,7 @@ using DG.Tweening;
      {
         if (State == STATE.ABLE)
         {
+            ScaleEffect();
             //select상태로 변경
             State = STATE.SELECT;
             //선택블록 리스트에 추가
@@ -119,6 +121,10 @@ using DG.Tweening;
         transform.DOMoveY(transform.position.y - 1, 0.5f);
         yield return new WaitForSeconds(1f);
         SetIndex();
+    }
+    public void ScaleEffect()
+    {
+        transform.DOPunchScale(Vector3.one, 0.3f,3);
     }
   //  public void Blind()
   //  {

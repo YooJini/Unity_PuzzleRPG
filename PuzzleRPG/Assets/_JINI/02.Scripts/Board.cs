@@ -110,6 +110,7 @@ public class Board : MonoBehaviour
     //선택가능한 블록 리스트에 넣고 able
     public void AbleAroundPlayer()
     { 
+
             int x = player.Index_X;
             int y = player.Index_Y;
 
@@ -129,6 +130,9 @@ public class Board : MonoBehaviour
                 }
             }
            }
+        Debug.Log(x);
+        Debug.Log(y);
+
         
     }
 
@@ -195,6 +199,7 @@ public class Board : MonoBehaviour
     //선택블록 리스트에 추가
     public void AddSelectedBlock(Block block)
     {
+        Debug.Log("Add");
         selectedBlockList.Add(block);
     }
     public void Pang()
@@ -240,13 +245,12 @@ public class Board : MonoBehaviour
 
     public void  AfterPang(int x, int y)
     {
+        if(ableBlockList.Count>0)ableBlockList.Clear();
         for (int i = y+1; i < height; i++)
         {
             StartCoroutine(blocks[x, i].Down());
             blocks[x, i - 1] = blocks[x, i];
         }
-
-        StartCoroutine(blocks[player.Index_X, player.Index_Y].Down());
     }
     //pang 블록을 pang리스트에 추가하는 함수
     //재사용될 블록들임
