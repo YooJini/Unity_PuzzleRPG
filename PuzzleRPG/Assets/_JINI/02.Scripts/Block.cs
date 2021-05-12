@@ -124,7 +124,7 @@ using DG.Tweening;
     }
     public void ScaleEffect()
     {
-        transform.DOPunchScale(Vector3.one, 0.3f,3);
+        transform.DOPunchScale(Vector3.one*0.8f, 0.3f,3);
     }
   //  public void Blind()
   //  {
