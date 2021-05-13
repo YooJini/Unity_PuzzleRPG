@@ -1,0 +1,334 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'ko' Physical Memory: 6082 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Unity/Unity2D/PuzzleRPG/PuzzleRPG
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50019
+Successfully changed project path to: C:/Unity/Unity2D/PuzzleRPG/PuzzleRPG
+C:/Unity/Unity2D/PuzzleRPG/PuzzleRPG
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 138.02 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity/Unity2D/PuzzleRPG/PuzzleRPG/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   
+    VRAM:     3041 MB
+    Driver:   27.20.11036.3
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.018498 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 110.98 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 10.569 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010417 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 138.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.363 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.0 MB.
+System memory in use after: 88.1 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 7.207100 ms (FindLiveObjects: 0.613500 ms CreateObjectMapping: 0.176100 ms MarkObjects: 6.184100 ms  DeleteObjects: 0.186600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 004 Charmander.png
+  artifactKey: Guid(34dc529636ae0ab418eca98d42d6e29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 004 Charmander.png using Guid(34dc529636ae0ab418eca98d42d6e29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99726ef28774e4a64ce97e3e366e991d') in 0.312052 seconds
+  Import took 0.321471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000739 seconds.
+  path: Assets/_JINI/03.Sprites/Game Boy Advance - Pokemon Mystery Dungeon Red Rescue Team - Safari (1).png
+  artifactKey: Guid(e380125d498d1ca4da4d93a835e30628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Game Boy Advance - Pokemon Mystery Dungeon Red Rescue Team - Safari (1).png using Guid(e380125d498d1ca4da4d93a835e30628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999e92e0f949accf7b0117655d8493d3') in 0.038518 seconds
+  Import took 0.046892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 165.327689 seconds.
+  path: Assets/_JINI/02.Scripts/GameManager.cs
+  artifactKey: Guid(ea7742f31cbbff84c8608ea18f90e879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/02.Scripts/GameManager.cs using Guid(ea7742f31cbbff84c8608ea18f90e879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079727b0c046b06fdc3109b5ae911c1e') in 0.059381 seconds
+  Import took 0.070012 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 11.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 54.9 MB.
+System memory in use after: 55.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2287.
+Total: 6.308600 ms (FindLiveObjects: 0.440000 ms CreateObjectMapping: 0.115700 ms MarkObjects: 5.699600 ms  DeleteObjects: 0.050000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009751 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.124 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.6 MB.
+System memory in use after: 90.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2290.
+Total: 5.890700 ms (FindLiveObjects: 0.685700 ms CreateObjectMapping: 0.328800 ms MarkObjects: 4.825900 ms  DeleteObjects: 0.047000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010095 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.128 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.7 MB.
+System memory in use after: 90.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2293.
+Total: 4.806800 ms (FindLiveObjects: 0.526900 ms CreateObjectMapping: 0.196300 ms MarkObjects: 4.036400 ms  DeleteObjects: 0.044700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010969 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.084 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.7 MB.
+System memory in use after: 90.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2296.
+Total: 5.835500 ms (FindLiveObjects: 0.541600 ms CreateObjectMapping: 0.141400 ms MarkObjects: 5.097900 ms  DeleteObjects: 0.051100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 681.560431 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 085 Dodrio.png
+  artifactKey: Guid(24d167bf98a5c18408e298223f1237e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 085 Dodrio.png using Guid(24d167bf98a5c18408e298223f1237e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc1b66477b192121ee3b646b6b131ee') in 0.327648 seconds
+  Import took 0.336062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000674 seconds.
+  path: Assets/_JINI/03.Sprites/제목 없음.png
+  artifactKey: Guid(0c085ab879ce60c4696dbf8479cb3597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/제목 없음.png using Guid(0c085ab879ce60c4696dbf8479cb3597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6e2bc848b120bda3f6c6dc111afe77') in 0.062680 seconds
+  Import took 0.071097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000663 seconds.
+  path: Assets/_JINI/03.Sprites/Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set.png
+  artifactKey: Guid(180cf1d9aeb43774dac96dc886c1b534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Nintendo 64 - Pokemon Puzzle League - Pokemon Block Set.png using Guid(180cf1d9aeb43774dac96dc886c1b534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87dc062bf49d2cf8173f099d6648150') in 0.081850 seconds
+  Import took 0.092132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000641 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokeballs.png
+  artifactKey: Guid(e7c96a8db7cb6db43bf9562c1014c83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokeballs.png using Guid(e7c96a8db7cb6db43bf9562c1014c83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b592aff6cf6350ae1a6951cff618451f') in 0.106492 seconds
+  Import took 0.116192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000742 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokemon Icons.png
+  artifactKey: Guid(e9849099e7e20e64181fe40d7c11496a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokemon Icons.png using Guid(e9849099e7e20e64181fe40d7c11496a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7431ed8d0d443d2c9b0bc6e16af932bd') in 0.149334 seconds
+  Import took 0.167951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000539 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokeballs.png
+  artifactKey: Guid(e7c96a8db7cb6db43bf9562c1014c83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokeballs.png using Guid(e7c96a8db7cb6db43bf9562c1014c83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b592aff6cf6350ae1a6951cff618451f') in 0.083012 seconds
+  Import took 0.097818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000612 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokemon Icons.png
+  artifactKey: Guid(e9849099e7e20e64181fe40d7c11496a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - Pokemon Icons.png using Guid(e9849099e7e20e64181fe40d7c11496a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7431ed8d0d443d2c9b0bc6e16af932bd') in 0.079930 seconds
+  Import took 0.088396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.787224 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 035 Clefairy.png
+  artifactKey: Guid(ee89d21c693af024a8b17fcb6b38d033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 035 Clefairy.png using Guid(ee89d21c693af024a8b17fcb6b38d033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b3ec2bc3ecfb37f23550d463883018') in 0.050325 seconds
+  Import took 0.060345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000820 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 042 Golbat.png
+  artifactKey: Guid(729f9f8ac5013fd4bbd2eca727be4aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 042 Golbat.png using Guid(729f9f8ac5013fd4bbd2eca727be4aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5936110fd13850af1fa205385c7960') in 0.069669 seconds
+  Import took 0.091574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000599 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 035 Clefairy.png
+  artifactKey: Guid(ee89d21c693af024a8b17fcb6b38d033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 035 Clefairy.png using Guid(ee89d21c693af024a8b17fcb6b38d033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b3ec2bc3ecfb37f23550d463883018') in 0.032698 seconds
+  Import took 0.040830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000600 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 042 Golbat.png
+  artifactKey: Guid(729f9f8ac5013fd4bbd2eca727be4aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 042 Golbat.png using Guid(729f9f8ac5013fd4bbd2eca727be4aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5936110fd13850af1fa205385c7960') in 0.068115 seconds
+  Import took 0.077584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.121735 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 001 Bulbasaur.png
+  artifactKey: Guid(6beaf46d621f47c4c8244fdca1a95dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 001 Bulbasaur.png using Guid(6beaf46d621f47c4c8244fdca1a95dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054a7ccddbd3d2c3afa8bcf667d7bdbc') in 0.120260 seconds
+  Import took 0.128663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000567 seconds.
+  path: Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 007 Squirtle.png
+  artifactKey: Guid(767c12f110024cc468774a7b6cc2abab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_JINI/03.Sprites/Mobile - Pokemon Smile - 007 Squirtle.png using Guid(767c12f110024cc468774a7b6cc2abab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec79c17062314cf1b8d2930c3069666') in 0.084090 seconds
+  Import took 0.091434 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009123 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.120 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.8 MB.
+System memory in use after: 90.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2322.
+Total: 6.632600 ms (FindLiveObjects: 0.840500 ms CreateObjectMapping: 0.226400 ms MarkObjects: 5.518200 ms  DeleteObjects: 0.043700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009884 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.240 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.8 MB.
+System memory in use after: 90.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2325.
+Total: 8.333400 ms (FindLiveObjects: 1.364800 ms CreateObjectMapping: 0.614000 ms MarkObjects: 6.297600 ms  DeleteObjects: 0.053300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 13.18 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 54.9 MB.
+System memory in use after: 55.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2325.
+Total: 6.053600 ms (FindLiveObjects: 0.530200 ms CreateObjectMapping: 0.126900 ms MarkObjects: 5.350600 ms  DeleteObjects: 0.042900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
